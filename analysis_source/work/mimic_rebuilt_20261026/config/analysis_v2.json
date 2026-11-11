@@ -1,0 +1,251 @@
+{
+  "version": "v2_20261009",
+  "hosp": "physionet-data.mimiciv_3_1_hosp",
+  "icu": "physionet-data.mimiciv_3_1_icu",
+  "derived": "physionet-data.mimiciv_3_1_derived",
+  "vitals_hours": 6,
+  "labs_hours": 24,
+  "fio2_pair_minutes": 60,
+  "seed": 20261009,
+  "split_fractions": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "maximum_bytes_billed": 300000000000,
+  "primary_features": [
+    "age",
+    "gender",
+    "heart_rate",
+    "sbp",
+    "map",
+    "resp_rate",
+    "temp_c",
+    "spo2",
+    "lactate",
+    "wbc",
+    "platelet",
+    "hemoglobin",
+    "creatinine",
+    "bun",
+    "sodium",
+    "potassium",
+    "bicarbonate",
+    "glucose"
+  ],
+  "vitals": {
+    "heart_rate": {
+      "itemids": [
+        220045
+      ],
+      "range": [
+        1,
+        400
+      ],
+      "unit": "beats/min"
+    },
+    "sbp": {
+      "itemids": [
+        220050,
+        220179
+      ],
+      "range": [
+        1,
+        400
+      ],
+      "unit": "mmHg"
+    },
+    "map": {
+      "itemids": [
+        220052,
+        220181
+      ],
+      "range": [
+        1,
+        300
+      ],
+      "unit": "mmHg"
+    },
+    "resp_rate": {
+      "itemids": [
+        220210
+      ],
+      "range": [
+        1,
+        100
+      ],
+      "unit": "breaths/min"
+    },
+    "temp_c": {
+      "itemids": [
+        223761,
+        223762
+      ],
+      "range": [
+        25,
+        45
+      ],
+      "unit": "C"
+    },
+    "spo2": {
+      "itemids": [
+        220277
+      ],
+      "range": [
+        1,
+        100
+      ],
+      "unit": "%"
+    }
+  },
+  "labs": {
+    "lactate": {
+      "itemids": [
+        50813
+      ],
+      "range": [
+        0.01,
+        100
+      ],
+      "unit": "mmol/L"
+    },
+    "wbc": {
+      "itemids": [
+        51301
+      ],
+      "range": [
+        0.01,
+        1000
+      ],
+      "unit": "K/uL"
+    },
+    "platelet": {
+      "itemids": [
+        51265
+      ],
+      "range": [
+        0,
+        2000
+      ],
+      "unit": "K/uL"
+    },
+    "hemoglobin": {
+      "itemids": [
+        51222
+      ],
+      "range": [
+        0.1,
+        30
+      ],
+      "unit": "g/dL"
+    },
+    "creatinine": {
+      "itemids": [
+        50912
+      ],
+      "range": [
+        0.01,
+        50
+      ],
+      "unit": "mg/dL"
+    },
+    "bun": {
+      "itemids": [
+        51006
+      ],
+      "range": [
+        0.1,
+        500
+      ],
+      "unit": "mg/dL"
+    },
+    "bilirubin": {
+      "itemids": [
+        50885
+      ],
+      "range": [
+        0,
+        100
+      ],
+      "unit": "mg/dL"
+    },
+    "sodium": {
+      "itemids": [
+        50983
+      ],
+      "range": [
+        50,
+        200
+      ],
+      "unit": "mEq/L"
+    },
+    "potassium": {
+      "itemids": [
+        50971
+      ],
+      "range": [
+        0.5,
+        15
+      ],
+      "unit": "mEq/L"
+    },
+    "bicarbonate": {
+      "itemids": [
+        50882
+      ],
+      "range": [
+        0,
+        60
+      ],
+      "unit": "mEq/L"
+    },
+    "glucose": {
+      "itemids": [
+        50931
+      ],
+      "range": [
+        1,
+        3000
+      ],
+      "unit": "mg/dL"
+    }
+  },
+  "candidate_features": [
+    "age",
+    "gender",
+    "heart_rate",
+    "sbp",
+    "map",
+    "resp_rate",
+    "temp_c",
+    "spo2",
+    "gcs_min",
+    "lactate",
+    "wbc",
+    "platelet",
+    "hemoglobin",
+    "creatinine",
+    "bun",
+    "bilirubin",
+    "sodium",
+    "potassium",
+    "bicarbonate",
+    "glucose",
+    "pao2_fio2_ratio"
+  ],
+  "excluded_primary_features": {
+    "gcs_min": {
+      "reason": "training_missingness_over_50_percent",
+      "pct_missing": 52.64
+    },
+    "bilirubin": {
+      "reason": "training_missingness_over_50_percent",
+      "pct_missing": 68.45
+    },
+    "pao2_fio2_ratio": {
+      "reason": "training_missingness_over_50_percent",
+      "pct_missing": 67.04
+    }
+  },
+  "missingness_selection_rule": "Training-only missingness >50% excludes candidate from main clustering/prediction; retain in data for description/sensitivity."
+}

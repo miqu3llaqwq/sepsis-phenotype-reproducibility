@@ -1,0 +1,29 @@
+{
+  "version": "v7_domain_balanced_missing_aware",
+  "status": "authorized_development_not_final_clinical_freeze",
+  "registration": "after v6 diagnostics and variable-role review; before v7 metrics",
+  "seed": 20261010,
+  "features": ["heart_rate","map","resp_rate","temp_c","spo2","lactate","wbc","platelet","hemoglobin","creatinine","sodium","potassium","bicarbonate","glucose","gcs_min","bilirubin"],
+  "domains": {
+    "circulation": ["heart_rate","map","lactate"],
+    "respiratory": ["resp_rate","spo2"],
+    "renal": ["creatinine"],
+    "hematologic": ["platelet","hemoglobin"],
+    "neurologic": ["gcs_min"],
+    "hepatic": ["bilirubin"],
+    "metabolic": ["sodium","potassium","bicarbonate","glucose"],
+    "inflammation": ["wbc"],
+    "thermoregulatory": ["temp_c"]
+  },
+  "eligibility": {"minimum_domains_observed": 4,"minimum_features_observed": 6,"required_domains": ["circulation","respiratory"]},
+  "distance": "domain-balanced missing-aware Gower; within-domain observed-feature mean; across-domain equal mean; P1-P99 training limits; no imputation in primary",
+  "candidate_k": [2,3,4,5,6],
+  "pam_restarts": 5,
+  "max_iter": 200,
+  "stability": {"repetitions": 10,"fraction": 0.8,"refit_limits_in_subsample": true},
+  "sensitivity": ["v6 median/imputation results","original min-max limits","SBP/BUN as secondary variables","P/F as secondary variable"],
+  "outcomes_used": false,
+  "validation_test_used": false,
+  "clinical_k_frozen": false,
+  "survival_started": false
+}

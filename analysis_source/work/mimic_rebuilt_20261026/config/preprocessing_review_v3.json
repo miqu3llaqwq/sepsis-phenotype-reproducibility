@@ -1,0 +1,19 @@
+{
+  "version": "preprocessing_review_v3_20261009",
+  "decisions_use_partition": "train",
+  "age_topcode": 90,
+  "age_deidentified_rule": "anchor_age=91 -> numeric proxy90, NOT exact age; other estimated ages clipped at90",
+  "duplicate_rule": "remove exact repeated item/time/specimen/value/unit, then collapse conflicting same item/time/specimen values by median",
+  "bp_rule": "matched same-time arterial SBP/MAP pair first, otherwise matched noninvasive pair; 0<MAP<=SBP and if DBP present 0<DBP<=MAP; no valid pair -> both missing",
+  "respiratory_rule": "220210 preferred; 224690 used only if preferred source absent",
+  "outlier_rule": "retain within broad technical ranges; review extreme observations using adjacent source values; stricter-screened sensitivity is separate",
+  "all_physiology_missing_rule": "retain in frozen cohort but exclude from primary phenotype-fitting population; all-patient inclusion sensitivity required",
+  "imputation_rule": "median and gender mode fitted only among eligible training rows; apply frozen values to other partitions",
+  "strict_sensitivity_ranges": {
+    "heart_rate": [20,300], "sbp": [40,260], "map": [30,200],
+    "resp_rate": [4,60], "temp_c": [30,43], "spo2": [50,100],
+    "lactate": [0.1,30], "wbc": [0.1,100], "platelet": [1,1500],
+    "hemoglobin": [3,22], "creatinine": [0.1,30], "bun": [1,200],
+    "sodium": [100,180], "potassium": [1.5,9], "bicarbonate": [5,45], "glucose": [20,1200]
+  }
+}

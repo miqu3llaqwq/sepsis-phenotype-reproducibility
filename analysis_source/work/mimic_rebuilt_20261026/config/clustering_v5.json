@@ -1,0 +1,49 @@
+{
+  "version": "physiology_v5",
+  "status": "authorized_development_not_final_clinical_freeze",
+  "registration_timing": "after v4 demographic/medoid findings;before v5 metrics",
+  "seed": 20261009,
+  "features": "16 physiology variables;age and gender excluded from distance;retained for descriptions",
+  "primary_min_observed": 8,
+  "coverage_sensitivity": [
+    6,
+    10
+  ],
+  "coverage_domains": "at least1 vital and1 laboratory variable observed before imputation",
+  "candidate_k": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "pam_restarts": 5,
+  "max_iter": 200,
+  "distance": "equal-weight numeric Gower;frozen training observed minmax;no outcome or demographic predictors",
+  "multiple_imputation": {
+    "method": "stochastic chained random-forest predictive mean matching;empirical donor values;flexible comparison,not proof of theoretical congeniality or proper Bayesian MI",
+    "datasets": 10,
+    "cycles": 6,
+    "trees": 32,
+    "max_depth": 10,
+    "min_samples_leaf": 10,
+    "donors": 5,
+    "n_jobs": 4,
+    "cluster_pooling": "mean Gower dissimilarity across10 imputations then PAM;compare individual-imputation partitions and aligned label support;not Rubin pooling",
+    "parameter_convergence_claim": false
+  },
+  "masked_observation_check": "fixed10% of observed cells hidden within eligible training;fit imputation without hidden values;score MAE/IQR and RMSE/IQR byfeature;artificial masking does not validate actual missingness mechanism",
+  "stability": {
+    "repetitions": 10,
+    "fraction": 0.8,
+    "baseline_refit": "median imputation and observed minmax refitted inside each subsample;full eligible train assigned to its medoids"
+  },
+  "min_cluster_fraction": 0.05,
+  "mean_stability_ari_screen": 0.8,
+  "threshold_decision": "8 remains registered main;6/10 are robustness comparisons,not a search for the nicest clustering;no unique optimum claim",
+  "test_used_for_development": false,
+  "clinical_k_frozen": false,
+  "survival_models_started": false,
+  "masked_check_repetitions": 3,
+  "masked_check_score": "three independent stochastic draws and their mean, separately scored;not comparing a stochastic draw directly as an optimal point predictor"
+}

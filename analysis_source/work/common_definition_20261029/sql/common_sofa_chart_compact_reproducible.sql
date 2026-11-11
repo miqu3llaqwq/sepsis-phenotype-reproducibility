@@ -1,0 +1,235 @@
+WITH raw AS (WITH ab AS (WITH antibiotic AS (WITH abx AS (
+    SELECT DISTINCT
+        drug
+        , route
+        , CASE
+            WHEN LOWER(drug) LIKE '%adoxa%' THEN 1
+            WHEN LOWER(drug) LIKE '%ala-tet%' THEN 1
+            WHEN LOWER(drug) LIKE '%alodox%' THEN 1
+            WHEN LOWER(drug) LIKE '%amikacin%' THEN 1
+            WHEN LOWER(drug) LIKE '%amikin%' THEN 1
+            WHEN LOWER(drug) LIKE '%amoxicill%' THEN 1
+            WHEN LOWER(drug) LIKE '%amphotericin%' THEN 1
+            WHEN LOWER(drug) LIKE '%anidulafungin%' THEN 1
+            WHEN LOWER(drug) LIKE '%ancef%' THEN 1
+            WHEN LOWER(drug) LIKE '%clavulanate%' THEN 1
+            WHEN LOWER(drug) LIKE '%ampicillin%' THEN 1
+            WHEN LOWER(drug) LIKE '%augmentin%' THEN 1
+            WHEN LOWER(drug) LIKE '%avelox%' THEN 1
+            WHEN LOWER(drug) LIKE '%avidoxy%' THEN 1
+            WHEN LOWER(drug) LIKE '%azactam%' THEN 1
+            WHEN LOWER(drug) LIKE '%azithromycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%aztreonam%' THEN 1
+            WHEN LOWER(drug) LIKE '%axetil%' THEN 1
+            WHEN LOWER(drug) LIKE '%bactocill%' THEN 1
+            WHEN LOWER(drug) LIKE '%bactrim%' THEN 1
+            WHEN LOWER(drug) LIKE '%bactroban%' THEN 1
+            WHEN LOWER(drug) LIKE '%bethkis%' THEN 1
+            WHEN LOWER(drug) LIKE '%biaxin%' THEN 1
+            WHEN LOWER(drug) LIKE '%bicillin l-a%' THEN 1
+            WHEN LOWER(drug) LIKE '%cayston%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefazolin%' THEN 1
+            WHEN LOWER(drug) LIKE '%cedax%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefoxitin%' THEN 1
+            WHEN LOWER(drug) LIKE '%ceftazidime%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefaclor%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefadroxil%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefdinir%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefditoren%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefepime%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefotan%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefotetan%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefotaxime%' THEN 1
+            WHEN LOWER(drug) LIKE '%ceftaroline%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefpodoxime%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefpirome%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefprozil%' THEN 1
+            WHEN LOWER(drug) LIKE '%ceftibuten%' THEN 1
+            WHEN LOWER(drug) LIKE '%ceftin%' THEN 1
+            WHEN LOWER(drug) LIKE '%ceftriaxone%' THEN 1
+            WHEN LOWER(drug) LIKE '%cefuroxime%' THEN 1
+            WHEN LOWER(drug) LIKE '%cephalexin%' THEN 1
+            WHEN LOWER(drug) LIKE '%cephalothin%' THEN 1
+            WHEN LOWER(drug) LIKE '%cephapririn%' THEN 1
+            WHEN LOWER(drug) LIKE '%chloramphenicol%' THEN 1
+            WHEN LOWER(drug) LIKE '%cipro%' THEN 1
+            WHEN LOWER(drug) LIKE '%ciprofloxacin%' THEN 1
+            WHEN LOWER(drug) LIKE '%claforan%' THEN 1
+            WHEN LOWER(drug) LIKE '%clarithromycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%cleocin%' THEN 1
+            WHEN LOWER(drug) LIKE '%clindamycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%cubicin%' THEN 1
+            WHEN LOWER(drug) LIKE '%dicloxacillin%' THEN 1
+            WHEN LOWER(drug) LIKE '%dirithromycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%doryx%' THEN 1
+            WHEN LOWER(drug) LIKE '%doxycy%' THEN 1
+            WHEN LOWER(drug) LIKE '%duricef%' THEN 1
+            WHEN LOWER(drug) LIKE '%dynacin%' THEN 1
+            WHEN LOWER(drug) LIKE '%ery-tab%' THEN 1
+            WHEN LOWER(drug) LIKE '%eryped%' THEN 1
+            WHEN LOWER(drug) LIKE '%eryc%' THEN 1
+            WHEN LOWER(drug) LIKE '%erythrocin%' THEN 1
+            WHEN LOWER(drug) LIKE '%erythromycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%factive%' THEN 1
+            WHEN LOWER(drug) LIKE '%flagyl%' THEN 1
+            WHEN LOWER(drug) LIKE '%fortaz%' THEN 1
+            WHEN LOWER(drug) LIKE '%furadantin%' THEN 1
+            WHEN LOWER(drug) LIKE '%garamycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%gentamicin%' THEN 1
+            WHEN LOWER(drug) LIKE '%kanamycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%keflex%' THEN 1
+            WHEN LOWER(drug) LIKE '%kefzol%' THEN 1
+            WHEN LOWER(drug) LIKE '%ketek%' THEN 1
+            WHEN LOWER(drug) LIKE '%levaquin%' THEN 1
+            WHEN LOWER(drug) LIKE '%levofloxacin%' THEN 1
+            WHEN LOWER(drug) LIKE '%lincocin%' THEN 1
+            WHEN LOWER(drug) LIKE '%linezolid%' THEN 1
+            WHEN LOWER(drug) LIKE '%macrobid%' THEN 1
+            WHEN LOWER(drug) LIKE '%macrodantin%' THEN 1
+            WHEN LOWER(drug) LIKE '%maxipime%' THEN 1
+            WHEN LOWER(drug) LIKE '%mefoxin%' THEN 1
+            WHEN LOWER(drug) LIKE '%metronidazole%' THEN 1
+            WHEN LOWER(drug) LIKE '%meropenem%' THEN 1
+            WHEN LOWER(drug) LIKE '%methicillin%' THEN 1
+            WHEN LOWER(drug) LIKE '%minocin%' THEN 1
+            WHEN LOWER(drug) LIKE '%minocycline%' THEN 1
+            WHEN LOWER(drug) LIKE '%monodox%' THEN 1
+            WHEN LOWER(drug) LIKE '%monurol%' THEN 1
+            WHEN LOWER(drug) LIKE '%morgidox%' THEN 1
+            WHEN LOWER(drug) LIKE '%moxatag%' THEN 1
+            WHEN LOWER(drug) LIKE '%moxifloxacin%' THEN 1
+            WHEN LOWER(drug) LIKE '%mupirocin%' THEN 1
+            WHEN LOWER(drug) LIKE '%myrac%' THEN 1
+            WHEN LOWER(drug) LIKE '%nafcillin%' THEN 1
+            WHEN LOWER(drug) LIKE '%neomycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%nicazel doxy 30%' THEN 1
+            WHEN LOWER(drug) LIKE '%nitrofurantoin%' THEN 1
+            WHEN LOWER(drug) LIKE '%norfloxacin%' THEN 1
+            WHEN LOWER(drug) LIKE '%noroxin%' THEN 1
+            WHEN LOWER(drug) LIKE '%ocudox%' THEN 1
+            WHEN LOWER(drug) LIKE '%ofloxacin%' THEN 1
+            WHEN LOWER(drug) LIKE '%omnicef%' THEN 1
+            WHEN LOWER(drug) LIKE '%oracea%' THEN 1
+            WHEN LOWER(drug) LIKE '%oraxyl%' THEN 1
+            WHEN LOWER(drug) LIKE '%oxacillin%' THEN 1
+            WHEN LOWER(drug) LIKE '%pc pen vk%' THEN 1
+            WHEN LOWER(drug) LIKE '%pce dispertab%' THEN 1
+            WHEN LOWER(drug) LIKE '%panixine%' THEN 1
+            WHEN LOWER(drug) LIKE '%pediazole%' THEN 1
+            WHEN LOWER(drug) LIKE '%penicillin%' THEN 1
+            WHEN LOWER(drug) LIKE '%periostat%' THEN 1
+            WHEN LOWER(drug) LIKE '%pfizerpen%' THEN 1
+            WHEN LOWER(drug) LIKE '%piperacillin%' THEN 1
+            WHEN LOWER(drug) LIKE '%tazobactam%' THEN 1
+            WHEN LOWER(drug) LIKE '%primsol%' THEN 1
+            WHEN LOWER(drug) LIKE '%proquin%' THEN 1
+            WHEN LOWER(drug) LIKE '%raniclor%' THEN 1
+            WHEN LOWER(drug) LIKE '%rifadin%' THEN 1
+            WHEN LOWER(drug) LIKE '%rifampin%' THEN 1
+            WHEN LOWER(drug) LIKE '%rocephin%' THEN 1
+            WHEN LOWER(drug) LIKE '%smz-tmp%' THEN 1
+            WHEN LOWER(drug) LIKE '%septra%' THEN 1
+            WHEN LOWER(drug) LIKE '%septra ds%' THEN 1
+            WHEN LOWER(drug) LIKE '%septra%' THEN 1
+            WHEN LOWER(drug) LIKE '%solodyn%' THEN 1
+            WHEN LOWER(drug) LIKE '%spectracef%' THEN 1
+            WHEN LOWER(drug) LIKE '%streptomycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%sulfadiazine%' THEN 1
+            WHEN LOWER(drug) LIKE '%sulfamethoxazole%' THEN 1
+            WHEN LOWER(drug) LIKE '%trimethoprim%' THEN 1
+            WHEN LOWER(drug) LIKE '%sulfatrim%' THEN 1
+            WHEN LOWER(drug) LIKE '%sulfisoxazole%' THEN 1
+            WHEN LOWER(drug) LIKE '%suprax%' THEN 1
+            WHEN LOWER(drug) LIKE '%synercid%' THEN 1
+            WHEN LOWER(drug) LIKE '%tazicef%' THEN 1
+            WHEN LOWER(drug) LIKE '%tetracycline%' THEN 1
+            WHEN LOWER(drug) LIKE '%timentin%' THEN 1
+            WHEN LOWER(drug) LIKE '%tobramycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%trimethoprim%' THEN 1
+            WHEN LOWER(drug) LIKE '%unasyn%' THEN 1
+            WHEN LOWER(drug) LIKE '%vancocin%' THEN 1
+            WHEN LOWER(drug) LIKE '%vancomycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%vantin%' THEN 1
+            WHEN LOWER(drug) LIKE '%vibativ%' THEN 1
+            WHEN LOWER(drug) LIKE '%vibra-tabs%' THEN 1
+            WHEN LOWER(drug) LIKE '%vibramycin%' THEN 1
+            WHEN LOWER(drug) LIKE '%zinacef%' THEN 1
+            WHEN LOWER(drug) LIKE '%zithromax%' THEN 1
+            WHEN LOWER(drug) LIKE '%zosyn%' THEN 1
+            WHEN LOWER(drug) LIKE '%zyvox%' THEN 1
+            ELSE 0
+        END AS antibiotic
+    FROM `physionet-data.mimiciv_3_1_hosp.prescriptions`
+    -- excludes vials/syringe/normal saline, etc
+    WHERE drug_type NOT IN ('BASE')
+        -- we exclude routes via the eye, ears, or topically
+        AND route NOT IN ('OU', 'OS', 'OD', 'AU', 'AS', 'AD', 'TP')
+        AND LOWER(route) NOT LIKE '%ear%'
+        AND LOWER(route) NOT LIKE '%eye%'
+        -- we exclude certain types of antibiotics: topical creams,
+        -- gels, desens, etc
+        AND LOWER(drug) NOT LIKE '%cream%'
+        AND LOWER(drug) NOT LIKE '%desensitization%'
+        AND LOWER(drug) NOT LIKE '%ophth oint%'
+        AND LOWER(drug) NOT LIKE '%gel%'
+-- other routes not sure about...
+-- for sure keep: ('IV','PO','PO/NG','ORAL', 'IV DRIP', 'IV BOLUS')
+-- ? VT, PB, PR, PL, NS, NG, NEB, NAS, LOCK, J TUBE, IVT
+-- ? IT, IRR, IP, IO, INHALATION, IN, IM
+-- ? IJ, IH, G TUBE, DIALYS
+-- ?? enemas??
+)
+
+SELECT
+    pr.subject_id, pr.hadm_id, pr.poe_id, pr.pharmacy_id, pr.drug_type
+    , ie.stay_id
+    , pr.drug AS antibiotic
+    , pr.route
+    , pr.starttime
+    , pr.stoptime
+FROM `physionet-data.mimiciv_3_1_hosp.prescriptions` pr
+-- inner join to subselect to only antibiotic prescriptions
+INNER JOIN abx
+    ON pr.drug = abx.drug
+        -- route is never NULL for antibiotics
+        -- only ~4000 null rows in prescriptions total.
+        AND pr.route = abx.route
+-- add in stay_id as we use this table for sepsis-3
+LEFT JOIN `physionet-data.mimiciv_3_1_icu.icustays` ie
+    ON pr.hadm_id = ie.hadm_id
+        AND pr.starttime >= ie.intime
+        AND pr.starttime < ie.outtime
+WHERE abx.antibiotic = 1
+)
+SELECT ab.*, ad.admittime, ie.intime, ie.outtime,
+ DATETIME_DIFF(ab.starttime,ad.admittime,SECOND) AS antibiotic_seconds
+FROM antibiotic ab
+JOIN `physionet-data.mimiciv_3_1_hosp.admissions` ad USING(hadm_id)
+JOIN `physionet-data.mimiciv_3_1_icu.icustays` ie USING(stay_id)
+WHERE EXISTS (
+ SELECT 1 FROM `physionet-data.mimiciv_3_1_hosp.microbiologyevents` m
+ WHERE m.hadm_id=ab.hadm_id AND m.charttime IS NOT NULL
+ AND m.charttime BETWEEN DATETIME_SUB(ab.starttime, INTERVAL 72 HOUR)
+ AND DATETIME_ADD(ab.starttime, INTERVAL 24 HOUR))), s AS (SELECT DISTINCT subject_id,hadm_id,stay_id,intime,outtime,admittime FROM ab)
+SELECT s.stay_id,DATETIME_DIFF(e.charttime,s.intime,SECOND)/60.0 AS offset_min,
+ e.itemid,e.valueuom,COUNT(*) AS source_rows,COUNTIF(e.valuenum IS NULL) AS null_rows,
+ COUNT(DISTINCT e.valuenum) AS distinct_values,MIN(e.valuenum) AS value,
+ COUNTIF(e.itemid=223900 AND (e.value='No Response-ETT' OR e.valuenum=0)) AS unscorable_rows
+FROM s JOIN `physionet-data.mimiciv_3_1_icu.chartevents` e USING(stay_id)
+WHERE e.itemid IN (220052,220181,220739,223900,223901)
+AND e.charttime BETWEEN GREATEST(s.admittime,DATETIME_SUB(s.intime,INTERVAL 48 HOUR)) AND s.outtime
+GROUP BY s.stay_id,e.charttime,s.intime,e.itemid,e.valueuom),
+gcs AS (SELECT stay_id,offset_min,
+MAX(IF(itemid=220739,value,NULL))+MAX(IF(itemid=223900,value,NULL))+MAX(IF(itemid=223901,value,NULL)) AS total,
+COUNT(DISTINCT itemid)=3 AND COUNTIF(null_rows>0 OR distinct_values!=1 OR unscorable_rows>0 OR value IS NULL OR value!=FLOOR(value) OR value<1 OR value>CASE itemid WHEN 220739 THEN 4 WHEN 223900 THEN 5 ELSE 6 END)=0
+AND COUNT(DISTINCT IF(itemid=220739,value,NULL))=1 AND COUNT(DISTINCT IF(itemid=223900,value,NULL))=1 AND COUNT(DISTINCT IF(itemid=223901,value,NULL))=1 AS valid
+FROM raw WHERE itemid IN(220739,223900,223901) GROUP BY stay_id,offset_min),
+points AS (
+SELECT stay_id,offset_min,'cardiovascular' AS domain,1 AS lower_score FROM raw
+WHERE itemid IN(220052,220181) AND null_rows=0 AND distinct_values=1 AND value>=1 AND value<70 AND LOWER(valueuom)='mmhg'
+UNION ALL
+SELECT stay_id,offset_min,'cns',CASE WHEN total<6 THEN 4 WHEN total<10 THEN 3 WHEN total<13 THEN 2 WHEN total<15 THEN 1 ELSE 0 END
+FROM gcs WHERE valid AND total>=3 AND total<15)
+SELECT stay_id,CEIL(offset_min/60)*60 AS offset_min,domain,MAX(lower_score) AS lower,
+COUNT(*) AS contributing_points,MIN(offset_min) AS first_point_min,MAX(offset_min) AS last_point_min
+FROM points GROUP BY stay_id,CEIL(offset_min/60)*60,domain

@@ -1,0 +1,591 @@
+[
+  {
+    "path": "analysis_source/accept_rebuilt_cohort_20261027.py",
+    "source_sha256": "01de8908a9d5c26ec19d6d69cf7c8fb3291a7230fe92b864e4c1a1340512f961",
+    "release_sha256": "01de8908a9d5c26ec19d6d69cf7c8fb3291a7230fe92b864e4c1a1340512f961",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/audit_common_source_semantics_20261029.py",
+    "source_sha256": "7b5c2ba0bee43b10f984be0533312c4540314227ca32456a762ab0599407dd2f",
+    "release_sha256": "7b5c2ba0bee43b10f984be0533312c4540314227ca32456a762ab0599407dd2f",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/build_common_identified_20261030.py",
+    "source_sha256": "3b2626b30012bfcfeaff856cec2fab1bc4ba3c384adb6de9a50d41d543c48428",
+    "release_sha256": "3b2626b30012bfcfeaff856cec2fab1bc4ba3c384adb6de9a50d41d543c48428",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/common_features_20261030.py",
+    "source_sha256": "a630fbca23762b7d44077663db31ebb653b17be0820401d81c44ac42656d8389",
+    "release_sha256": "a630fbca23762b7d44077663db31ebb653b17be0820401d81c44ac42656d8389",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/common_sofa_lab_bounds_20261030.py",
+    "source_sha256": "9315bea700a3709968796ae27eea9617a216f8d6ccd1e3f9e7cf291867d80ffd",
+    "release_sha256": "9315bea700a3709968796ae27eea9617a216f8d6ccd1e3f9e7cf291867d80ffd",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/compact_common_chart_20261030.py",
+    "source_sha256": "fe08c9189ce18e1201505670d582417a0c5c632d4b9d57a163f0be5eb7dfe552",
+    "release_sha256": "fe08c9189ce18e1201505670d582417a0c5c632d4b9d57a163f0be5eb7dfe552",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/cross_query_anchor_depth_20261028.py",
+    "source_sha256": "3ba2de836777319d7d7fd15631ad1ad37d04c9ee66e39cf4cfe5e850acf61a34",
+    "release_sha256": "3ba2de836777319d7d7fd15631ad1ad37d04c9ee66e39cf4cfe5e850acf61a34",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/external_common_20261104.py",
+    "source_sha256": "dec30eef7ca11f714e2287e4f4a800f29b4810eb0390c8a2e52f31c0387c154b",
+    "release_sha256": "a311e995cec79644981c406a80ac4b07b80bbe4e492376e4536675c0d47056e5",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": [
+      "Replace personal absolute input path with documented environment variable"
+    ]
+  },
+  {
+    "path": "analysis_source/extract_common_core_20261030.py",
+    "source_sha256": "b7ff06fd70374216f7e2335f4aa6b3f0fad35a5384cff9a1f0cd7cbb499a1e06",
+    "release_sha256": "b7ff06fd70374216f7e2335f4aa6b3f0fad35a5384cff9a1f0cd7cbb499a1e06",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/extract_eicu_culture_linked_sources.py",
+    "source_sha256": "7a293e93dc30eebd6d546a81cd2d80fde10605e6d2c4cacec45b4373513aaea5",
+    "release_sha256": "a50a17be80db6b47605db857f073c379fcc181b33fc4083b30dcfa0822cb535e",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": [
+      "Replace personal absolute input path with documented environment variable"
+    ]
+  },
+  {
+    "path": "analysis_source/fit_common_models_20261030.py",
+    "source_sha256": "5767b99c457cd288dd27d9186d4f0da64cd67bddb7aef60d63cf64d93727fda3",
+    "release_sha256": "5767b99c457cd288dd27d9186d4f0da64cd67bddb7aef60d63cf64d93727fda3",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/freeze_revised_inputs_20261027.py",
+    "source_sha256": "54f682e61fcc00f35b756b3ad4a6033a71993c78309307ace97a9d425043ed7f",
+    "release_sha256": "54f682e61fcc00f35b756b3ad4a6033a71993c78309307ace97a9d425043ed7f",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/frozen_external_assignment_20261027.py",
+    "source_sha256": "73e81733a3f5dd49bf32deb9708cb6eca676c01b884ff3153f31e4579001547b",
+    "release_sha256": "73e81733a3f5dd49bf32deb9708cb6eca676c01b884ff3153f31e4579001547b",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/improve_phenotypes_20261029.py",
+    "source_sha256": "442b34190c397545c4f670c0e5d8bfea2a87e721a21f69486c9f5a0ae264bc66",
+    "release_sha256": "442b34190c397545c4f670c0e5d8bfea2a87e721a21f69486c9f5a0ae264bc66",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/prepare_rebuilt_core14_training.py",
+    "source_sha256": "b62535f283955c81a49c7d8cdfaa45a987cede5e8f5a0b0ac2a5b5a54032d571",
+    "release_sha256": "b62535f283955c81a49c7d8cdfaa45a987cede5e8f5a0b0ac2a5b5a54032d571",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/rebuild_corrected_mimic_branch.py",
+    "source_sha256": "710bd0741160e7c7b67c6fdf257a74639eec791f2f42aab9bbaf5f82602b6625",
+    "release_sha256": "a1ce537180427d128cba8fe72f578b52fd315159a7bbdfba7c3a873d7cc55bb2",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": [
+      "Replace personal absolute input path with documented environment variable"
+    ]
+  },
+  {
+    "path": "analysis_source/report_common_1to3_20261030.py",
+    "source_sha256": "51ba80cd5a604ac623f0eb0d9e225ebdb52347aaf33daed0da37f63585f2a91d",
+    "release_sha256": "51ba80cd5a604ac623f0eb0d9e225ebdb52347aaf33daed0da37f63585f2a91d",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/run_common_pipeline_20261030.py",
+    "source_sha256": "7645ad184dd2019cd27c4893bc92c2dfe11de1b78964ecb4320cac82ad0d667f",
+    "release_sha256": "7645ad184dd2019cd27c4893bc92c2dfe11de1b78964ecb4320cac82ad0d667f",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/run_missingness_depth_20261028.py",
+    "source_sha256": "7486c97eb4ada5df086d5c8045e9c4dd2221f74560a90e9a51f5170d30e00d04",
+    "release_sha256": "7486c97eb4ada5df086d5c8045e9c4dd2221f74560a90e9a51f5170d30e00d04",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/run_revised_phenotypes_20261027.py",
+    "source_sha256": "af0ac1296688087b0a3e795603cd6f765ed54688abda1256f91a70ce80f77090",
+    "release_sha256": "af0ac1296688087b0a3e795603cd6f765ed54688abda1256f91a70ce80f77090",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/start_common_definition_20261029.py",
+    "source_sha256": "3ceec725a8a735a422df3744889be377e00c3f212a94c69d573a3804e1e85c80",
+    "release_sha256": "6aa977fbddf4b207d09fd3d534812eb7e71965e2f2ac2d2555b95e9d639c7260",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": [
+      "Replace personal absolute input path with documented environment variable"
+    ]
+  },
+  {
+    "path": "analysis_source/verify_common_core_20261030.py",
+    "source_sha256": "cdcb0468ca0e57abb09f49d9f4a2afa4f4a7b56221f2df3734dbaaa019270803",
+    "release_sha256": "cdcb0468ca0e57abb09f49d9f4a2afa4f4a7b56221f2df3734dbaaa019270803",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/verify_compact_chart_20261030.py",
+    "source_sha256": "8703c3e903cc804566f482c08da56cd826259709eb5678f2197d604803c5cfd8",
+    "release_sha256": "8703c3e903cc804566f482c08da56cd826259709eb5678f2197d604803c5cfd8",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/verify_improvement_20261029.py",
+    "source_sha256": "683590b77e6f303605a8e17ed191bcee2b8eccefdd3e32949adb4086d8b1a264",
+    "release_sha256": "683590b77e6f303605a8e17ed191bcee2b8eccefdd3e32949adb4086d8b1a264",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/verify_missingness_depth_20261028.py",
+    "source_sha256": "6bc789819d98e8ed5e1c5b5629d27d52da881c98cba906111968008cba130731",
+    "release_sha256": "6bc789819d98e8ed5e1c5b5629d27d52da881c98cba906111968008cba130731",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/02_download_cohort.py",
+    "source_sha256": "cb8b18c9a0d5a83d4447f0e57c781cf5b2a21d487ff579d6c69b3a00eebc879f",
+    "release_sha256": "cb8b18c9a0d5a83d4447f0e57c781cf5b2a21d487ff579d6c69b3a00eebc879f",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/04_download_features.py",
+    "source_sha256": "1d7419c6247e85a35209209fc1572ac7573e468d171d947626055c61784619e0",
+    "release_sha256": "1d7419c6247e85a35209209fc1572ac7573e468d171d947626055c61784619e0",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/06_feature_qc.py",
+    "source_sha256": "b3045f048d9774dd889e261d14ede0dbb382ab2536a7ef49d4f7d968a0564308",
+    "release_sha256": "b3045f048d9774dd889e261d14ede0dbb382ab2536a7ef49d4f7d968a0564308",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/08_rebuild.py",
+    "source_sha256": "2ba04ed47a3a3c1d8033b30839bc56b013076250f77293d479e9035cd4039de4",
+    "release_sha256": "2ba04ed47a3a3c1d8033b30839bc56b013076250f77293d479e9035cd4039de4",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/09_observation_review.py",
+    "source_sha256": "958985c7208f7574f7e9dff8fd5c5512b2c9d1b7dfd2c9f99150706e458cc5e3",
+    "release_sha256": "958985c7208f7574f7e9dff8fd5c5512b2c9d1b7dfd2c9f99150706e458cc5e3",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/10_prepare_reviewed_features.py",
+    "source_sha256": "bb20db63a944528f1cbaab885cf660c1b3da02f6c93050b30eced1ed0f158cb4",
+    "release_sha256": "bb20db63a944528f1cbaab885cf660c1b3da02f6c93050b30eced1ed0f158cb4",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/11_verify_preprocessing.py",
+    "source_sha256": "2f686914c548bc733d972afe9cc9956567eec5cd37327fb9de560fb730c7ec58",
+    "release_sha256": "2f686914c548bc733d972afe9cc9956567eec5cd37327fb9de560fb730c7ec58",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/12_prepare_clinical_review.py",
+    "source_sha256": "3807302770325a29cff0f514f0797cd7920ecc2e3f91428468942f19a5c4f1ea",
+    "release_sha256": "3807302770325a29cff0f514f0797cd7920ecc2e3f91428468942f19a5c4f1ea",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/13_assess_review_evidence.py",
+    "source_sha256": "2722eff866098f9784bdd6b9550b7a9d1ac2871cc63be20a97c1cbabc858d0bb",
+    "release_sha256": "2722eff866098f9784bdd6b9550b7a9d1ac2871cc63be20a97c1cbabc858d0bb",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/14_cluster_training.py",
+    "source_sha256": "472102ea85314add99d2f9caf697671260b4b88ee91bda6607508a2c749febba",
+    "release_sha256": "472102ea85314add99d2f9caf697671260b4b88ee91bda6607508a2c749febba",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/15_gender_diagnostic.py",
+    "source_sha256": "e5e4b6205d716bc30a08025feab4cfd3a35fe87b579fdc96c2bf235879cf92c8",
+    "release_sha256": "e5e4b6205d716bc30a08025feab4cfd3a35fe87b579fdc96c2bf235879cf92c8",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/16_report_clustering.py",
+    "source_sha256": "b9a1c908fe2fc4927e45164d02fc7ef18615403a5ed7580e6cc990585498bbf0",
+    "release_sha256": "e837773c8bccb6c9e9fa9008fc0b6437d49d47c9592d590dda0644dde111196b",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/17_clustering_supplementary.py",
+    "source_sha256": "101eb19d60b697d78b5fef457e8f131e154ecad17e8b716ab6e382f6ccd1682c",
+    "release_sha256": "101eb19d60b697d78b5fef457e8f131e154ecad17e8b716ab6e382f6ccd1682c",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/18_physiology_v5.py",
+    "source_sha256": "f58cc6c2db70ce37702233bdbe0cbf2ece934d4b39fd79c492ec51fb19ceb1fc",
+    "release_sha256": "f58cc6c2db70ce37702233bdbe0cbf2ece934d4b39fd79c492ec51fb19ceb1fc",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/19_report_physiology_v5.py",
+    "source_sha256": "4ff6691f4c5906c2843861cb88b5be1b9d43ee89d6f4b276aa081c2bbb170313",
+    "release_sha256": "4ff6691f4c5906c2843861cb88b5be1b9d43ee89d6f4b276aa081c2bbb170313",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/20_focus_scale_influence.py",
+    "source_sha256": "252ff6c8100e5c38d028c1497028d83c50ea06648ab45b6931f8784841b3b359",
+    "release_sha256": "252ff6c8100e5c38d028c1497028d83c50ea06648ab45b6931f8784841b3b359",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/21_finalize_v5.py",
+    "source_sha256": "35c100c67dc638de97d9620f455b205dfaed09b58b9fbba40499c58534468835",
+    "release_sha256": "35c100c67dc638de97d9620f455b205dfaed09b58b9fbba40499c58534468835",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/22_physiology_v6.py",
+    "source_sha256": "ab380cb6c8e650f5f6a22a88929bfbb03c8f5c0295e73c58282994f6d4221e75",
+    "release_sha256": "ab380cb6c8e650f5f6a22a88929bfbb03c8f5c0295e73c58282994f6d4221e75",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/23_report_physiology_v6.py",
+    "source_sha256": "8872c3fbc7e230a25e235f0a7de719bf2f0eb517a6478aceccef2627e6abbf41",
+    "release_sha256": "8872c3fbc7e230a25e235f0a7de719bf2f0eb517a6478aceccef2627e6abbf41",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/24_fix_feature_metadata.py",
+    "source_sha256": "e1da4eb3890cd72c36dd3691fe6e296c29ee37302fd11b1029d2e9afdb9a4080",
+    "release_sha256": "e1da4eb3890cd72c36dd3691fe6e296c29ee37302fd11b1029d2e9afdb9a4080",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/25_audit_deferred_domains.py",
+    "source_sha256": "4a4c5a0ef4137a14ace6a00953628def6605d40e884dfe37ff6c2b156d7b0e8d",
+    "release_sha256": "4a4c5a0ef4137a14ace6a00953628def6605d40e884dfe37ff6c2b156d7b0e8d",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/26_domain_balanced_v7.py",
+    "source_sha256": "7b1e771275702b77996b0bb8340687d6b4717c77835a9c2c84c3b5a771cbdaf5",
+    "release_sha256": "7b1e771275702b77996b0bb8340687d6b4717c77835a9c2c84c3b5a771cbdaf5",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/27_v7_median_sensitivity.py",
+    "source_sha256": "8115763069f7d957f77d1cef8845a841883b81004573763ef05e9100b074c7b6",
+    "release_sha256": "8115763069f7d957f77d1cef8845a841883b81004573763ef05e9100b074c7b6",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/28_v7_core14_sensitivity.py",
+    "source_sha256": "4390b135f0163993ec68bd52dd35b6c3ff53deddda5b2e5ce76760be42617e65",
+    "release_sha256": "4390b135f0163993ec68bd52dd35b6c3ff53deddda5b2e5ce76760be42617e65",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/29_mice_pmm_cluster_sensitivity.py",
+    "source_sha256": "102bdb7e9cd854f3a28477ea8693714c329866f11d6493b9a99ebacd8620fb4e",
+    "release_sha256": "102bdb7e9cd854f3a28477ea8693714c329866f11d6493b9a99ebacd8620fb4e",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/30_core14_stability.py",
+    "source_sha256": "d23fc2cc744f39051ff59587e82c78585aedfb633832ed98fe781f9f4f88449a",
+    "release_sha256": "d23fc2cc744f39051ff59587e82c78585aedfb633832ed98fe781f9f4f88449a",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/32_core14_equal_feature_gower.py",
+    "source_sha256": "87f15d660b31716384076f38579482b2aa64e33798575cec9fee4d93351aa68a",
+    "release_sha256": "87f15d660b31716384076f38579482b2aa64e33798575cec9fee4d93351aa68a",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/33_mice_equal_feature_check.py",
+    "source_sha256": "68884b91897d30b8558f6d0981dbac5f4ff8f222516eafbf29e83d9e10df00c0",
+    "release_sha256": "68884b91897d30b8558f6d0981dbac5f4ff8f222516eafbf29e83d9e10df00c0",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/34_protocol_consistency_audit.py",
+    "source_sha256": "b6c89f50b81c1036f310aa986eff946e8d8dfd2465d1eb844fea3795e762ecce",
+    "release_sha256": "b6c89f50b81c1036f310aa986eff946e8d8dfd2465d1eb844fea3795e762ecce",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/35_complete14_sensitivity.py",
+    "source_sha256": "d3177bda27f7b459021297290dc61b975923d2cbbea2e8bfb7149673850a079c",
+    "release_sha256": "d3177bda27f7b459021297290dc61b975923d2cbbea2e8bfb7149673850a079c",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/36_complete14_stability.py",
+    "source_sha256": "357c587f8dd0eadc1166e6d355f1a56585d6b89b78039fae836086530ccaaefe",
+    "release_sha256": "357c587f8dd0eadc1166e6d355f1a56585d6b89b78039fae836086530ccaaefe",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/37_variable_set_comparison.py",
+    "source_sha256": "2438c5b08a1262137847fd565578d458ae9d3b5cd23a63d2a9b04b70157e0a04",
+    "release_sha256": "2438c5b08a1262137847fd565578d458ae9d3b5cd23a63d2a9b04b70157e0a04",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/38_historical16_stability.py",
+    "source_sha256": "f24fbd9ddd2e73956d882f4703c4de4d797592eda93b4f2ed02c6fd1a4c9322a",
+    "release_sha256": "f24fbd9ddd2e73956d882f4703c4de4d797592eda93b4f2ed02c6fd1a4c9322a",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/39_missingness_measurement_sensitivity.py",
+    "source_sha256": "2d3a26a620971ed42c9f1083d71958d371e692d1a80bc9c3d81130de1f8a1434",
+    "release_sha256": "2d3a26a620971ed42c9f1083d71958d371e692d1a80bc9c3d81130de1f8a1434",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/test_clustering.py",
+    "source_sha256": "90477c1609a3fc81c8bd62df06abd06f811dd2b251182085165f947b141bee6a",
+    "release_sha256": "90477c1609a3fc81c8bd62df06abd06f811dd2b251182085165f947b141bee6a",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/test_physiology_v5.py",
+    "source_sha256": "7b018d3ae6f5f4c0cc3b8a95ecc5bea1346fe2190836db4c332c57eab7095a82",
+    "release_sha256": "7b018d3ae6f5f4c0cc3b8a95ecc5bea1346fe2190836db4c332c57eab7095a82",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/test_physiology_v6.py",
+    "source_sha256": "4927dd183082f1d66bb83160477191de4b3c1ef1f654623b5710d2bc45b8c437",
+    "release_sha256": "4927dd183082f1d66bb83160477191de4b3c1ef1f654623b5710d2bc45b8c437",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/test_preprocessing_review.py",
+    "source_sha256": "9723e9d526e4c90d5eda755b556c736014743930d19ae1e3db4b8b1210f63702",
+    "release_sha256": "9723e9d526e4c90d5eda755b556c736014743930d19ae1e3db4b8b1210f63702",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/analysis/test_rebuild.py",
+    "source_sha256": "290e13dc4cddd5dd8d0ff527ac0925bc0390ff3a5b5c2a6fa5e635c0e807eb46",
+    "release_sha256": "290e13dc4cddd5dd8d0ff527ac0925bc0390ff3a5b5c2a6fa5e635c0e807eb46",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/config/analysis_v2.json",
+    "source_sha256": "bb809fac7e4a6e4e2cff6505b9932187bb8fcf1e5d11ee0313cccf7f6ef36974",
+    "release_sha256": "ed73c6dce61c6263587221d4b7f63711e2e77e5aaad22a373eef8c886d3e48db",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/config/clustering_v4.json",
+    "source_sha256": "38b07eedf6264305f393834f052eda018f85670153f0d1e1bcdc1e46fa21c113",
+    "release_sha256": "38b07eedf6264305f393834f052eda018f85670153f0d1e1bcdc1e46fa21c113",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/config/clustering_v5.json",
+    "source_sha256": "4d2a133eac6f5886f5cd22e7b0e1545602b5ee56a409808b636ece2ad0c4e082",
+    "release_sha256": "0461aa106252b829f83912087dd7a711d45ed4112de41240e2c993d0f260cb4c",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/config/clustering_v6.json",
+    "source_sha256": "61847be5af3338d8c938c53e43d50ddab0f44d93ce320770647121d6e48e92af",
+    "release_sha256": "61847be5af3338d8c938c53e43d50ddab0f44d93ce320770647121d6e48e92af",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/config/clustering_v7.json",
+    "source_sha256": "703627f467bccdc2295c5bb1cb001f60ebc1e417b50b8f1a47a8ebed58b9c046",
+    "release_sha256": "703627f467bccdc2295c5bb1cb001f60ebc1e417b50b8f1a47a8ebed58b9c046",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/config/phenotype_primary_v1.json",
+    "source_sha256": "61780d2fb3a0d240a1f4cf90572f3d3417e32f96e125c486a503d6ef3f40c762",
+    "release_sha256": "61780d2fb3a0d240a1f4cf90572f3d3417e32f96e125c486a503d6ef3f40c762",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/config/preprocessing_review_v3.json",
+    "source_sha256": "f406b2973ded2256c1d2e2bf598cc57c338679a46bd860253dd4bdeacb66cd5a",
+    "release_sha256": "f406b2973ded2256c1d2e2bf598cc57c338679a46bd860253dd4bdeacb66cd5a",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/sql/cohort_audit.sql",
+    "source_sha256": "7dc958d21f49d1b11dce505884b11f56ab5aba0efb4553634665103c7e23c1dd",
+    "release_sha256": "2e10eb22b0c545eb3d5a5ae1ff2b4b3796a4d7a8e92981e920b291fff88035f5",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/sql/features.sql",
+    "source_sha256": "562b94419add2d5d8a9b21d1c24490034cc7ce5cb8c0db226af66ae2efc37aca",
+    "release_sha256": "3afd1b5be31a67f702c16d4d6ba4f29b4d8c59d6f23eca838843bbfc68f7d314",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/sql/v2_review_labs.sql",
+    "source_sha256": "526b91731382c942380ad31e8fe46d9c29f55d2a75a81b79fb2e5168c10f399b",
+    "release_sha256": "6bc83b435d1420bcbc81c79651f4b52d02ef8a58fb13899ad4f310b18bfb7f72",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/mimic_rebuilt_20261026/sql/v2_review_vitals.sql",
+    "source_sha256": "2f0b2ea6ed95d3483b58c9f92b222b4899e8f6f3e7c5ed91541f0a21b9a2d184",
+    "release_sha256": "bd3ad70103467bd2a15634c86c38c4c662b198a9ada0dc9b37ce6fa87d043f03",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/outputs/source_lineage_20261026/cohort_audit_historical_query.sql",
+    "source_sha256": "bc39c7aeeb70a6500846ff690edb65e21d26275d4bbecafd69ba1f33d1670f11",
+    "release_sha256": "c129127d14055a63233c67346f69ca03d5a787e2ccd3efa5c06b87222523c3b6",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/outputs/source_lineage_20261026/features_historical_query.sql",
+    "source_sha256": "f2846c48e2885b60e09218ce67c86df083a398de541788e9ce3f53c9c33b8ab9",
+    "release_sha256": "16f2501da443a0aea68caa014be2c00db9cf2ff4c75df33ad1010bc53e4e0763",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/outputs/source_lineage_20261026/declared_build_snapshot/medication__antibiotic.sql",
+    "source_sha256": "300816a74a070b2dffe6c5aa982e8103c46080fa5ed98cf5fffd36a245b24be2",
+    "release_sha256": "300816a74a070b2dffe6c5aa982e8103c46080fa5ed98cf5fffd36a245b24be2",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/outputs/source_lineage_20261026/declared_build_snapshot/score__sofa.sql",
+    "source_sha256": "ffac74c57b140cb5b3c54c5a5677b907647997b948299192eeda5573db99cac9",
+    "release_sha256": "ffac74c57b140cb5b3c54c5a5677b907647997b948299192eeda5573db99cac9",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/outputs/source_lineage_20261026/declared_build_snapshot/sepsis__sepsis3.sql",
+    "source_sha256": "1d06e0efed85220c8a9cfd27ee9ee50e4dfbbe7a4975a7d2f7af72a92766692a",
+    "release_sha256": "1d06e0efed85220c8a9cfd27ee9ee50e4dfbbe7a4975a7d2f7af72a92766692a",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/outputs/source_lineage_20261026/declared_build_snapshot/sepsis__suspicion_of_infection.sql",
+    "source_sha256": "0fc3d5a84ce727b94b7adbacf410a0af341248ebbebc6ad98ff9dbacc6701f0f",
+    "release_sha256": "0fc3d5a84ce727b94b7adbacf410a0af341248ebbebc6ad98ff9dbacc6701f0f",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/common_definition_20261029/sql/common_chart_qa_reproducible.sql",
+    "source_sha256": "9f2396c0662cd77641fc5c72e589bc61b9fcb870c9f7e93a3f4dc6717954b807",
+    "release_sha256": "0532b506a0a6cfeed5ae082f6b9f4a7e5c697dee15151c4a3a22f4bea3c28081",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  },
+  {
+    "path": "analysis_source/work/common_definition_20261029/sql/common_sofa_chart_compact_reproducible.sql",
+    "source_sha256": "551d645c44798085e553cf5cf7b9d1e54ebbc9595c19cb2b00173c99694b2954",
+    "release_sha256": "3c1c8a623eb20ee5b61071ee5115acf51cbda18eecc705771ae1b17ed695814d",
+    "release_hash_encoding": "UTF-8, normalized LF newlines",
+    "edits": []
+  }
+]

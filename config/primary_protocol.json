@@ -1,0 +1,43 @@
+{
+  "version": "phenotype_primary_v1",
+  "status": "pre_outcome_freeze",
+  "features_primary": ["heart_rate","map","resp_rate","temp_c","spo2","lactate","wbc","platelet","hemoglobin","creatinine","sodium","potassium","bicarbonate","glucose"],
+  "features_sensitivity_descriptive": ["gcs_min","bilirubin","pao2_fio2_ratio"],
+  "covariates_not_cluster_inputs": ["age","gender"],
+  "domains": {
+    "circulation": ["heart_rate","map","lactate"],
+    "respiratory": ["resp_rate","spo2"],
+    "renal": ["creatinine"],
+    "hematologic": ["platelet","hemoglobin"],
+    "metabolic": ["sodium","potassium","bicarbonate","glucose"],
+    "inflammation": ["wbc"],
+    "thermoregulatory": ["temp_c"]
+  },
+  "eligibility": {
+    "minimum_domains_observed": 4,
+    "minimum_features_observed": 6,
+    "required_domains": ["circulation","respiratory"],
+    "pairwise_compatibility": "exclude rows involved in a pair with no common observed primary variable; no distance substitution"
+  },
+  "primary_missingness": {
+    "method": "MICE_PMM_training_only",
+    "imputation_used_for_primary": true,
+    "within_domain": "not applicable after training-only multiple imputation",
+    "across_domains": "each primary variable contributes equally to Gower distance",
+    "limits": "training eligible P1-P99"
+  },
+  "imputation_sensitivity": {
+    "method": "multiple_imputation_by_chained_equations_predictive_mean_matching",
+    "datasets": 10,
+    "burn_in_cycles": 10,
+    "between_draw_cycles": 10,
+    "donor_count": 10,
+    "fit_scope": "training set only",
+    "outcomes_in_imputer": false,
+    "pooling": "cluster each imputed dataset; summarize co-clustering agreement and label stability; do not pool patient values as if observed"
+  },
+  "clustering": {"distance": "equal_feature_gower", "algorithm": "PAM_k_medoids", "candidate_k": [2,3,4,5,6], "primary_k_candidate": null, "sensitivity_k": [2,3,4], "pam_restarts": 5, "seed": 20261010},
+  "validation_test_used": false,
+  "domain_balanced_variant": "sensitivity_only",
+  "clinical_k_frozen": false
+}

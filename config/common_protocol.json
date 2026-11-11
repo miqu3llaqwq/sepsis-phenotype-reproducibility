@@ -1,0 +1,31 @@
+{
+  "version": "common_identified_v2_20261030",
+  "posthoc": true,
+  "previous_external_results_seen": true,
+  "scope": "Identifiable subset under six-domain SOFA bounds; not exact six-domain scalar SOFA and not original-model strict external validation.",
+  "hour_grid": "ICU-relative endpoints -24h through floor(ICU discharge/60); each score uses (h-1440,h] observations within hospital admission.",
+  "baseline": "Operational absolute SOFA >=2 under assumed baseline zero, as in reference extraction; not documented patient-specific delta SOFA.",
+  "infection": "Frozen reference antimicrobial name dictionary, including its antifungals; explicit systemic routes; prescription-start time, not actual administration. Same-admission exact culture times. Prior [AB-72h,AB) preferred, else (AB,AB+24h].",
+  "orders": "Known systemic route, known non-cancelled/valid POE lifecycle, stop strictly after start. Before-start stop/discontinuation/cancellation exclude. Unknown route/lifecycle, zero or missing duration held possible and can block an earlier hospital event. Order entry after start is retained as retrospective metadata, not prospective availability.",
+  "culture": "Deduplicate exact collection timestamp for pairing, retain specimen provenance; no midnight imputation, restrict to hospital period.",
+  "sofa_bounds": {
+    "coagulation": "Valid unique-time platelet; standard thresholds; unknown has lower0 upper4.",
+    "liver": "Valid unique-time bilirubin mg/dL; standard thresholds; unknown0..4.",
+    "renal": "Valid creatinine lower score. Urine duration and complete collection cannot be certified in both sources; urine remains0..4 in BOTH adapters, never treated as normal.",
+    "respiration": "Same-time unique arterial-category PaO2/FiO2 observation pairing, not specimen identity equivalence. PF<300 gives lower2, <400 lower1. Ventilation unaligned: possible3/4 retained, never infer off ventilation from missing record.",
+    "cardiovascular": "Valid recorded MAP<70 lower1. Infusion entry timestamp does not certify clinical dose interval; dose contribution stays0..4 in BOTH sources. No substitution of MIMIC store/start time for eICU infusionoffset.",
+    "cns": "Unique valid numeric total or complete same-time numeric Eyes+Verbal+Motor; conflicting, intubation-unscorable and invalid records unknown. No fill-forward or default15."
+  },
+  "upper_bound": "Conservative total upper24 at each hour, including unrecorded domains. This deliberately overbounds possible score paths.",
+  "t0": "max(first qualifying SOFA hour,AB,culture,ICU). Accept event only if first-possible and first-certain SOFA completions yield same t0.",
+  "analysis_unit": "Earliest identified qualifying t0 per hospital admission; any earlier/tied potentially qualifying unresolved event in another stay or earlier unknown order blocks selection. First event is selected before feature missingness filtering.",
+  "eligibility": "Age>=18 (eICU >89 is adult without exact imputation), known hospital discharge status, 0<=t0<ICU discharge and hospital discharge. No death-time equality claim.",
+  "features": "Fixed14. Retrospective observed-time, 6h vitals and24h labs, unique-time nonconflicting values; no entry<=t0 claim. Entry/revision times retained in evidence. Median; source priorities explicit; technical ranges frozen from existing config.",
+  "training": "Patient-disjoint70/15/15; train-only limits; observed Gower k2..6 plus10 MICE-PMM draws and resampling; no eICU training/k selection.",
+  "limitations": [
+    "Selective measurement-complete/identifiable population, not all sepsis patients.",
+    "Unidentified urine/dose/ventilation retained as uncertainty, not semantic equivalence.",
+    "No real-time deployment claim.",
+    "Earlier clinically unrecorded infection events cannot be recovered."
+  ]
+}

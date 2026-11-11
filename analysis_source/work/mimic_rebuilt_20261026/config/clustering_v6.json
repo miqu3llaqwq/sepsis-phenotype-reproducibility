@@ -1,0 +1,20 @@
+{
+  "version": "v6_bounded_diagnostic",
+  "registration": "after v5 findings; before v6 computation; exploratory, not preregistration",
+  "seed": 20261009,
+  "population": "same v5 coverage8 TRAIN patients, both domains present",
+  "features": ["heart_rate","sbp","map","resp_rate","temp_c","spo2","lactate","wbc","platelet","hemoglobin","creatinine","bun","sodium","potassium","bicarbonate","glucose"],
+  "robust_quantiles": [0.01,0.99],
+  "distance": "equal-weight numeric Gower on clipped representation; preserve raw measurements",
+  "candidate_k": [2,3,4,5,6],
+  "pam_restarts": 5,
+  "max_iter": 200,
+  "imputations": 10,
+  "imputation_models_refitted": false,
+  "analysis": "A/C reuse verified v5; B median robust; D mean robust distances of same ten imputations; complete16 diagnostics on frozen scales",
+  "parameter_search": false,
+  "resampling_pipeline_claim": false,
+  "outcomes_used": false,
+  "validation_test_used": false,
+  "clinical_k_frozen": false
+}
